@@ -13,7 +13,7 @@ a {
 body {
   background-image: url("./images/backImages/low-poly-grid-haikei.png");
   background-repeat: no-repeat;
-  background-position:center;
+  background-position:cover;
   background-size:center;
   
 }
