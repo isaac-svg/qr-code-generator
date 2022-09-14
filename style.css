@@ -11,8 +11,11 @@ a {
   color: black;
 }
 body {
-  background-image: url("./images/Images/low-poly-grid-haikei.png");
+  background-image: url("./images/backImages/low-poly-grid-haikei.png");
   background-repeat: no-repeat;
+  background-position:center;
+  background-size:center;
+  
 }
 .header {
   display: flex;
