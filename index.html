@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>QR Code Generator</title>
+
+    <link
+      rel=" shortcut icon"
+      type="image/png"
+      href="./images/Images/favicon_io/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">Qr Code Generator</header>
+
+    <main class="main">
+      <div class="form-container">
+        <div class="info"><h1>Generate your QR Code here</h1></div>
+        <p>QR Code helps smart phones users to access your site with ease</p>
+        <form id="form" class="form">
+          <input
+            type="url"
+            id="url"
+            class="url"
+            placeholder="Type your url here"
+          />
+          <div class="select-options">
+            <select id="selected">
+              <option value="100">100 x 100</option>
+              <option value="150">150 x 150</option>
+              <option value="200" selected>200 x 200</option>
+              <option value="300">300 x 300</option>
+              <option value="400">400 x 400</option>
+              <!-- <option value="500">500 x 500</option> -->
+            </select>
+          </div>
+          <button type="submit" class="generate-btn">Generate QR Code</button>
+          <div class="qrcode">
+            <div class="dots-bars-8"></div>
+            <div id="qrcode"></div>
+          </div>
+        </form>
+      </div>
+      <div class="logo">
+        <div class="scan">
+          <div class="QRcode"></div>
+          <div class="border"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
