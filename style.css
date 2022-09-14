@@ -12,7 +12,6 @@ a {
 }
 body {
   background-image: url("./images/backImages/low-poly-grid-haikei.png");
-  background-color:red;
 }
 .header {
   display: flex;
